@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block title %}No Movies Available{% endblock %}
+
+{% block content %}
+    <div class="text-center py-20">
+        <h2 class="text-3xl font-medium text-gray-700">No Movies Available</h2>
+        <p class="text-lg mt-4">{{ message }}</p>
+        <a href="{% url 'myapp:profile_list' %}" class="mt-4 text-blue-500">Go Back to Profiles</a>
+    </div>
+{% endblock %}
